@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* Menü Kısmı */
+.menu{
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    font-family: 'MuseoModerno', cursive;
+    justify-content: space-between;
+}
+.beyaztaraful{
+    display: flex;
+    align-items: center;
+}
+.beyazulninpsi{
+    font-size: 18px;
+    color: #000E39;
+    margin-left: 10px;
+}
+.beyaztaraful li {
+    margin-left: 50px;
+}
+.beyaztaraful li a{
+    transition: ease-in-out;
+}
+.beyaztaraful li a:hover{
+    color: #000E39;
+    border-bottom: 2px solid #000E39;
+    
+}
+.lihome{
+    margin-left: 170px;
+}
+.mavitaraful{
+    padding-right: 30px;
+}
+.mavitaraful li a{
+    padding: 7px 12px;
+    background-color:#0023AC;
+    color:  #fff;
+    border-radius: 2px;
+    transition: 1s;
+}
+.mavitaraful li a:hover{
+    border-radius: 10px;
+    color: #0023AC;
+    background: #fff;
+}
+.iletişim{
+    position: absolute;
+    right: 5;
+}
+li{
+    list-style: none;
+    padding-left:10px;
+}
+a{
+    text-decoration: none;
+    font-size: 15px;
+    transition: 2s;
+}
+
+
+/* Beyaz Taraf Text Kısımı */
+
+/* Banner ilk 100vh Kısmı */
+
+.banner{
+    display: flex;
+}
+.solbeyaz{
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    
+}
+.solbeyaz .solbeyazh1{
+    margin-left: 45px;
+    margin-top: -180px;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+}
+.solbeyazh1::before{
+    position: absolute;
+    left: -10px;
+    top: 12px;
+    content: "";
+    width: 5px;
+    height: 195px;
+    background-color:#000E39;
+    border-radius: 2px;
+    animation: h1before 3s; 
+}
+.solbeyazdesc{
+    position: absolute;
+    top: 400px;
+    margin-left: 30px;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Cabin', sans-serif;
+}
+.banner button{
+    padding: 14px 30px;
+    background-color: #000E39;
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 500px;
+    left: 30px;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+}
+.banner button:hover{
+    background-color: #0023AC;
+}
+.beyazüsttext{
+    color: #000E39;
+}
+.sagmavi{
+    width: 50%;
+    height: 90vh;
+    background-color: #000E39;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+}
+.sagmaviçi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+
+
+/*   Müşterilerimiz Bizi Neden Tercih Ediyor Kısmı  */
+
+.terc{
+    top: 50px;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    
+}
+.terc h1{
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.terc3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 200;
+}
+.tercih1{
+    width: 20%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: floralwhite;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px 3px rgb(204, 198, 198);
+    border-radius: 5px;
+    padding: 8px;
+    transition: all .2s ease-in-out;
+}
+.tercih1:hover{
+    transform: scale(1.1);
+}
+.tercih2{
+    width: 20%;
+    height:40vh;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 3px 3px rgb(204, 198, 198);
+    border-radius: 5px;
+    padding: 8px;
+    transition: all .2s ease-in-out;
+}
+.tercih2:hover{
+    transform: scale(1.1);
+}
+.tercih3{
+    width: 20%;
+    height:40vh;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  3px 3px 3px 3px rgb(204, 198, 198);
+    border-radius: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.tercih3:hover{
+    transform: scale(1.1);
+}
+.tercicon{
+    margin-bottom: 14px;
+}
+.terc h2{
+    margin-bottom: 14px;
+
+}
+.terc p{
+    line-height: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bölüm Üç Yazılım */
+
+.section3{
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 1000px;
+}
+.yazimg{
+    width: 45%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.yazimg .img2{
+    width: 95%;
+    height: 50vh;
+    z-index: 1;
+    border-radius: 10px;
+    position: absolute;
+}
+.yazbtn{
+    position: absolute;
+    z-index: 3;
+    top: 75%;
+    right: 50px;
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    background-color:transparent;
+    border: 3px solid #0023AC;
+    color: #0023AC;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 15px;
+}
+.yazbtn:hover{
+    background: #0023AC;
+    color: #fff;
+}
+.yazcontent{
+    width: 50%;
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+}
+.yazcontent img{
+    width: 90px;
+    height: 80px;
+    margin-right: 5px;
+}
+.ptech{
+    padding-left: 70px;
+    margin-top: 10px;
+    width: 100%;
+    opacity: .3;
+}
+.titlesection3{
+    font-family:'MuseoModerno', cursive;
+}
+.pdesc{
+    width: 80%;
+    text-align: center;
+    font-family: 'MuseoModerno',cursive;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 25px;
+}
+.let1{
+    display: flex;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.let2{
+    display: flex;
+    width: 80%;
+}
+.let2 img{
+    width: 25%;
+    height: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Portfolio Bölümü */
+
+.containerportfolio{
+   width: 90%;
+   height: 130vh;
+   margin-top: 600px;
+   margin-left:5% ;
+   position: absolute;
+
+}
+.projeler{
+    margin-bottom: 10px;
+    color: gray;
+    font-family: 'MuseoModerno';
+    font-size: 13px;
+}
+.topside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.topside p{
+    color: #000;
+    font-family: 'MuseoModerno';
+    font-size: 30px;
+}
+.topside button{
+    background-color: transparent;
+    border: 2px solid #0023AC;
+    font-size: 13px;
+    width: 90px;
+    height: 30px;
+    color: #0023AC;
+    border-radius: 5px;
+    font-family: 'MuseoModerno';
+}
+.topside button:hover{
+    background: #0023AC;
+    color: #fff;
+}
+.containerportfolio img{
+    transition: 2s;
+}
+.containerportfolio img:hover{
+    transform: scale(1.1);
+}
+
+
+/* Gallery Bölümünü Fotaraf Bölümü */
+
+
+.ust2foto{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:2.5%;
+    margin-bottom: 5%;
+}
+.ust2foto img{
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+.üstfoto div{
+    width:90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+.siteismi{
+    font-family: 'MuseoModerno';
+    letter-spacing: 5px;
+    font-size: 15px;
+}
+.sitekategorisi{
+    font-size: 14px;
+    font-family: 'MuseoModerno';
+    color: #0023AC;
+}
+.konu{
+    color: gray;
+}
+
+/*  Gallery Alt 3 resim  */
+
+
+.alt3foto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 1.5%;
+}
+.alt3foto img{
+    width: 90%;
+    height: 90%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.altsolfoto div{
+    width:90% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.altortafoto div{
+    width:90% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.altsagfoto div{
+    width:90% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* input Section */
+
+
+.input{
+    position: absolute;
+    margin-top: 1650px;
+    background: linear-gradient(#0023AC,#000E39);
+    width: 100%;
+    display: flex;
+    border-radius: 30px;
+}
+.inputh1{
+    padding-left: 9%;
+    color: #fff;
+    font-family: 'MuseoModerno';
+    line-height: 40px;
+    margin-top: 4%;
+}
+.inputp{
+    padding-left: 9%;
+    color: #fff;
+    font-family: 'MuseoModerno';
+    margin-top: 2%;
+}
+.iform{
+    padding-left: 9%;
+    width:60%;
+    position: relative;
+}
+.iname{
+    margin-top: 4%;
+    margin-bottom:3% ;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #ffffff;
+    width: 80%;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'MuseoModerno';
+    outline: none;
+}
+.iname::placeholder{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'MuseoModerno';
+    position: absolute;
+}
+.iemail{
+    margin-top: 4%;
+    margin-bottom:3% ;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #ffffff;
+    width: 38%;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'MuseoModerno';
+    outline: none;
+}
+.iemail::placeholder{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'MuseoModerno';
+    position: absolute;
+}
+.itel{
+    margin-top: 4%;
+    margin-bottom:3% ;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #ffffff;
+    width: 38%;
+    margin-left: 2.5%;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'MuseoModerno';
+    outline: none;
+}
+.itel::placeholder{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'MuseoModerno';
+    position: absolute;
+}
+.iozet{
+    width: 80%;
+    height: 100px;
+    border:0;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    margin-top: 4%;
+    margin-bottom:3% ;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'MusaoModerno';
+    outline: none;
+}
+.iozet::placeholder{
+    color: #fff;
+    font-size:14px;
+    font-family: 'MuseoModerno';
+    position: absolute;
+}
+.ibutton{
+    margin-left: 55%;
+    width: 120px;
+    height: 35px;
+    background: #fff;
+    color: #0023AC;
+    border: 0;
+    font-family:'MuseoModerno';
+    font-size: 17px;
+    border-radius: 10px;
+    margin-bottom : 5% ;
+    border: 0;
+}
+.solköşeimput{
+    width: 60%;
+}
+.bilgiler{
+    position: absolute;
+    width: 40%;
+    transform: rotate(90deg);
+    display: flex;
+    left: 350px;
+    top: 300px;
+    
+}
+.eposta{
+    margin-right: 5%;
+    width: 225px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #000E39;
+    color: #000E39;
+    text-align:center;
+    line-height: 48px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'MuseoModerno';
+    
+}
+.tele{
+    width: 225px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #000E39;
+    color: #000E39;
+    text-align:center;
+    line-height: 48px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'MuseoModerno';
+}
+.iimg{
+    padding-top:11%;
+    width: 30%;
+    height: 50vh;
+}
+
+
+
+
+/* Footer section */
+
+
+.footer{
+    margin-top: 2400px;
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+.sosyal{
+    margin-left: 7%;
+    margin-right: 10%;
+}
+.sosyal p {
+    color: #0023AC;
+    font-size: 50px;
+    font-family: 'MuseoModerno';
+    border: 0;
+}
+.iconsos{
+    display: flex;
+}
+.iconsos img{
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+}
+.servisler{
+    margin-right: 10%;
+}
+.servisler ul{
+    padding-top: 25px;
+}
+.servisler span{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'MuseoModerno';
+}
+.servisler a{
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+}
+.servisler li{
+    line-height: 30px;
+}
+
+
+.gezinti{
+    margin-right: 10%;
+}
+.gezinti ul{
+    padding-top: 25px;
+}
+.gezinti span{
+    padding-bottom: 8px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+    font-family: 'MuseoModerno';
+}
+.gezinti a{
+    color: gray;
+    font-size: 15px;
+    font-weight: 400;
+}
+.gezinti li{
+    line-height: 30px;
+}
+
+
+.yol{
+    padding-top: 25px;
+}
+.yol .ulasım{
+    padding-bottom: 8px;
+    font-size: 20px;
+    color: #000;
+    font-family: 'MuseoModerno';
+    font-weight: 500;
+}
+.yol{
+    color: gray;
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
